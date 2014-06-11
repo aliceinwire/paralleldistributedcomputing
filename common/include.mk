@@ -1,0 +1,12 @@
+CC=gcc
+DEBUG_FLAGS=-g
+OUTPUT_FLAG = -o
+LINK_FLAGS = ${DEBUG_FLAGS} -o
+CFLAGS = ${LINK_FLAGS}
+DO_NOT_LINK = -c
+EXTERNAL_LIBS = -lpthread
+CLEAN_CMD = rm -f
+RECURSIVE_CLEAN_CMD = ${CLEAN_CMD} -r 
+OBJECT_DIR = build/obj
+RELATIVE_OBJECT_DIR = ../build/obj
+BUILD_DIR = build/bin
